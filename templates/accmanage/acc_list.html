@@ -15,8 +15,8 @@
         {% for acc in acc_list %}
         <tr>
             <td>{{ forloop.counter }}</td>
-            <td>{{ acc.name }}</td>
-            <td>{{ acc.property }}</td>
+            <td>{{ acc.username }}</td>
+            <td>{{ acc.job }}</td>
             <td>
                 <a href="#" class="delete btn btn-sm btn-outline-secondary"
                 data-uri="{% url 'accmanage:acc_delete' acc.id  %}">삭제</a>
