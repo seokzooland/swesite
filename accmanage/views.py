@@ -6,7 +6,7 @@ from django.contrib import messages
 
 
 def index(request):
-    acc_list = Accinfo.objects.order_by('id')
+    acc_list = Accinfo.objects.order_by('name')
     context = {'acc_list': acc_list}
 
     return render(request, 'accmanage/acc_list.html', context)
